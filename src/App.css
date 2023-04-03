@@ -3,6 +3,12 @@
 :root {
   --primary-color: rgb(55 156 246);
   --background-color: #0d1117;
+  --counter-color: linear-gradient(
+    90deg,
+    rgb(60, 153, 196) 15%,
+    rgba(29, 129, 176, 1) 40%,
+    rgb(23, 79, 158) 70%
+  );
 }
 
 * {
