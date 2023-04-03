@@ -1,7 +1,14 @@
 import './App.css';
+import { Header } from './Components/Header/Header';
+import { Hero } from './Components/Hero/Hero';
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <>
+      <Header />
+      <Hero />
+    </>
+  );
 }
 
 export default App;
