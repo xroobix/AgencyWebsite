@@ -9,6 +9,16 @@
     rgba(29, 129, 176, 1) 40%,
     rgb(23, 79, 158) 70%
   );
+  --card-bg: linear-gradient(
+    45deg,
+    rgba(15, 18, 61, 1) 23%,
+    rgba(15, 18, 61, 1) 35%,
+    rgba(11, 41, 69, 1) 80%
+  );
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -32,11 +42,12 @@ a:hover {
 }
 
 h1, h2 {
-  color: white
+  color: white;
+  font-size: 2rem;
 }
 
 section {
-  padding: 60px 0px;
+  padding: 70px 0px;
 }
 
 .container {
@@ -49,4 +60,11 @@ section {
   color: white;
   line-height: 30px;
   font-size: .9rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: 400;
+  margin-bottom: 20px;
 }
