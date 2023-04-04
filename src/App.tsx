@@ -1,4 +1,5 @@
 import './App.css';
+import { About } from './Components/About/About';
 import { Counter } from './Components/Counter/Counter';
 import { Header } from './Components/Header/Header';
 import { Hero } from './Components/Hero/Hero';
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Counter />
       <Services />
+      <About />
     </>
   );
 }
