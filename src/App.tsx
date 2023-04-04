@@ -4,6 +4,7 @@ import { Counter } from './Components/Counter/Counter';
 import { Header } from './Components/Header/Header';
 import { Hero } from './Components/Hero/Hero';
 import { Services } from './Components/Services/Services';
+import { Team } from './Components/Team/Team';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Counter />
       <Services />
       <About />
+      <Team />
     </>
   );
 }
