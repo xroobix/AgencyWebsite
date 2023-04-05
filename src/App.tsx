@@ -6,6 +6,7 @@ import { Header } from './Components/Header/Header';
 import { Hero } from './Components/Hero/Hero';
 import { Services } from './Components/Services/Services';
 import { Team } from './Components/Team/Team';
+import { Testimonial } from './Components/Testimonial/Testimonial';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Team />
       <Blog />
+      <Testimonial />
     </>
   );
 }
