@@ -1,0 +1,29 @@
+.newsletter {
+    background: var(--card-bg);
+    margin-top: 60px;
+}
+
+.newsletter__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newsletter__wrapper h2{
+}
+
+.newsletter__form {
+    padding: .4em 1rem;
+    background: white;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 38%;
+}
+
+.email-input {
+    border: none;
+    outline: none;
+    width: 70%;
+}
