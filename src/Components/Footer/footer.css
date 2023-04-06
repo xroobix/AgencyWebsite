@@ -1,0 +1,49 @@
+.footer {
+    padding-block: 60px;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    width: 35%;
+}
+
+.footer__quick-links-wrapper {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__desc {
+    color: var(--primary-color);
+}
+
+.small__text {
+    font-size: .8rem;
+    line-height: 25px;
+}
+
+.quick__links-title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.quick__links {
+    list-style: none;
+}
+
+.quick__link-item {
+    font-size: 1.1rem;
+    margin-top: 25px;
+    font-weight: 300;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: lightgray;
+    font-size: .8rem;
+}
