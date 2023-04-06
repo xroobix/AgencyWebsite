@@ -4,7 +4,7 @@ import './services.css';
 const servicesData = [
     {
         icon: "ri-apps-line",
-        title: "App Developmnet",
+        title: "App Development",
         description: "It is the process of creating software applications for mobile devices that can range from simple applications designed for a specific purpose to complex apps with multiple features and integrations.",
     },
     {
