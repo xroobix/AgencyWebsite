@@ -14,7 +14,7 @@ const customerData = [
   },
   {
     name: 'Sarah Thompson',
-    description: `"I am so glad that we chose FutureMedia as our marketing agency! From the very beginning, they took the time to understand our business goals and develop a customized strategy that would help us achieve them. Their team is always available to answer questions and provide updates, and they have been instrumental in helping us to build brand awareness and drive more traffic to our website. Thanks to their hard work and dedication, we have been able to grow our business and reach new customers. I would highly recommend FutureMedia to any CEO looking for a reliable and effective marketing partner."`, 
+    description: `"I am so glad that we chose FutureMedia as our marketing agency! From the very beginning, they took the time to understand our business goals and develop a customized strategy that would help us achieve them. Their team is always available to answer questions and provide updates, and they have been instrumental in helping us to build brand awareness and drive more traffic to our website. Thanks to their hard work and dedication, we have been able to grow our business and reach new customers. I would highly recommend FutureMedia to any CEO looking for a reliable and effective marketing partner."`,
     image: customer2,
     position: 'CEO, WonderSon',
   },
@@ -31,7 +31,7 @@ export const Testimonial = () => {
     infinite: true,
     centerMode: true,
     speed: 1000,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     slidesToShow: 1,
   };
