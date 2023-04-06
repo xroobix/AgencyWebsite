@@ -47,4 +47,9 @@
 .choose__us-title {
     color: white;
     font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.choose__us-description {
+    line-height: 20px;
 }

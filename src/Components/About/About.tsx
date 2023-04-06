@@ -4,22 +4,22 @@ import aboutImg from "../../images/about-us.jpg"
 
 const chooseData = [
   {
-    icon: 'ri-wifi-line',
-    title: 'First working process',
+    icon: 'ri-settings-2-line',
+    title: 'Experience and Expertise',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consectetur repellendus delectus cum quibusdam error nostrum, neque ducimus! Tempore, omnis!',
+      'Our team has over a decade of experience in the industry, and we pride ourselves on staying up-to-date with the latest developments and trends. We have the expertise to deliver high-quality work that meets your specific needs and exceeds your expectations.',
   },
   {
     icon: 'ri-team-line',
-    title: 'Dedicated team',
+    title: 'Personalized Approach',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consectetur repellendus delectus cum quibusdam error nostrum, neque ducimus! Tempore, omnis!',
+      'We understand that every client is unique, which is why we take a personalized approach to every project. We take the time to understand your goals, objectives, and challenges, and we work closely with you to develop a customized solution that works for your business.',
   },
   {
     icon: 'ri-customer-service-2-line',
     title: '24/7 Hours support',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consectetur repellendus delectus cum quibusdam error nostrum, neque ducimus! Tempore, omnis!',
+      'At our company, we believe that great customer service is essential to building long-term relationships with our clients. We are committed to providing exceptional service, and we always go above and beyond to ensure that our clients are satisfied with our work.',
   },
 ];
 
