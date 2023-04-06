@@ -7,16 +7,16 @@ export const Header = () => {
       display: 'Home',
     },
     {
-      path: '#about',
-      display: 'About',
-    },
-    {
-      path: '#service',
-      display: 'Service',
-    },
-    {
       path: '#projects',
       display: 'Projects',
+    },
+    {
+      path: '#services',
+      display: 'Services',
+    },
+    {
+      path: '#about',
+      display: 'About',
     },
     {
       path: '#blog',
@@ -29,7 +29,7 @@ export const Header = () => {
       <div className="container">
         <div className="nav__wrapper">
           <div className="logo">
-            <h2><a href="#home">FutureMedia</a></h2>
+            <h2><a href="#">FutureMedia</a></h2>
           </div>
           <div className="navigation">
             <ul className="menu">
