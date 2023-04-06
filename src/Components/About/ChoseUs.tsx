@@ -14,7 +14,7 @@ export const ChoseUs: FC<Props> = ({ icon, title, description }) => {
       </span>
       <div>
         <h4 className="choose__us-title">{title}</h4>
-        <p className="description">{description}</p>
+        <p className="description choose__us-description">{description}</p>
       </div>
     </div>
   );
