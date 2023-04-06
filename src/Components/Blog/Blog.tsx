@@ -30,7 +30,7 @@ const blogData = [
 
 export const Blog = () => {
   return (
-    <section>
+    <section id='blog'>
       <div className="container">
         <div className="blog__top-content">
           <h6 className="subtitle">Our Blog</h6>
