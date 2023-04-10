@@ -1,7 +1,13 @@
 import './hero.css';
 import darkThemeHeroImg from "../../images/hero-img.png"
+import lightThemeHeroImg from "../../images/light-hero-img.jpg"
+import { FC } from 'react';
 
-export const Hero = () => {
+interface Props {
+  theme: string;
+}
+
+export const Hero:FC<Props> = ({theme}) => {
   return (
     <section className="hero__section" id='home'>
       <div className="container">
@@ -19,7 +25,7 @@ export const Hero = () => {
             </div>
           </div>
           <div className="hero__img">
-            <img src={darkThemeHeroImg} alt="hero img" className='' />
+            <img src={theme === '' ? darkThemeHeroImg : lightThemeHeroImg} alt="hero-img" className='' />
           </div>
         </div>
       </div>
