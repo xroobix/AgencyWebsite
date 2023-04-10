@@ -20,7 +20,7 @@ export const Newsletter = () => {
               />
               <input
                 type="submit"
-                className="secondary__btn"
+                className="primary__btn"
                 value="Subscribe!"
               />
             </form>
