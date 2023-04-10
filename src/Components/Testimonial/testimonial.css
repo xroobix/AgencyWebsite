@@ -15,6 +15,11 @@
     margin-inline: .25rem;
 }
 
+.light-theme .slider__item {
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 0px 1px inset;
+}
+
 .slider__item .description {
     min-height: 180px;
 }
@@ -48,6 +53,6 @@
 }
 
 .customer__position {
-    color: white;
+    color: var(--text-color);
     font-size: .8rem;
 }

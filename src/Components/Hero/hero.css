@@ -8,6 +8,10 @@
     width: 50%;
 }
 
+.hero__img img {
+    width: 100%;
+}
+
 .hero__content {
     padding-top: 50px;
 }
@@ -37,23 +41,27 @@
     padding: .6rem 1.5rem;
     border: none;
     outline: none;
-    color: white;
     border-radius: .2rem;
-    border: 1px solid rgba(255,255,255,0.1);
     cursor: pointer;
 }
 
 .primary__btn:hover {
     background: var(--background-color);
+    color: var(--text-color)
 }
 .secondary__btn:hover {
     background: var(--primary-color);
+    color: white;
 }
 
 .primary__btn {
     background: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
 }
 
 .secondary__btn {
     background: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid rgb(218, 218, 218);
 }

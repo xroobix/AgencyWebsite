@@ -44,6 +44,10 @@
 
 .copyright {
     margin-top: 20px;
-    color: lightgray;
+    color: var(--text-color);
     font-size: .8rem;
+}
+
+.copyright a {
+    color: var(--primary-color);
 }

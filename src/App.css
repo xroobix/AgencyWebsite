@@ -3,6 +3,7 @@
 :root {
   --primary-color: rgb(55 156 246);
   --background-color: #0d1117;
+  --text-color: white;
   --card-bg: linear-gradient(
     45deg,
     rgb(19, 15, 88, 1) 23%,
@@ -14,6 +15,19 @@
     #02bba6 30%,
     rgba(29, 129, 176, 1) 55%,
     rgba(35, 93, 173, 1) 75%
+  );
+}
+
+.light-theme {
+  --primary-color: #816aff;
+  --counter-color: white;
+  --background-color: white;
+  --text-color: #0d1117;
+  --card-bg: linear-gradient(
+    270deg,
+    rgba(189, 243, 255, 1) 29%,
+    rgba(193, 243, 255, 1) 50%,
+    rgba(226, 250, 255, 1) 78%
   );
 }
 
@@ -34,7 +48,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
 }
 
 a:hover {
@@ -42,7 +56,7 @@ a:hover {
 }
 
 h1, h2 {
-  color: white;
+  color: var(--text-color);
   font-size: 2rem;
 }
 
@@ -57,7 +71,7 @@ section {
 }
 
 .description {
-  color: white;
+  color: var(--text-color);
   line-height: 30px;
   font-size: .9rem;
 }

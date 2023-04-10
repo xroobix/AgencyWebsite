@@ -16,6 +16,11 @@
     border-radius: .5rem;
 }
 
+.light-theme .services__item {
+    background: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 .services__icon {
     display: flex;
     align-items: center;

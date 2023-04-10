@@ -1,3 +1,7 @@
+.light-theme .blog {
+    
+}
+
 .blog__wrapper {
     display: flex;
     align-items: center;
@@ -14,6 +18,11 @@
     padding: 25px 20px;
     background: var(--card-bg);
     border-radius: .5rem;
+}
+
+.light-theme .blog__item {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: white;
 }
 
 .blog__item:nth-child(2) {
@@ -34,7 +43,7 @@
 }
 
 .blog__item h3 {
-    color: white;
+    color: var(--text-color);
     font-weight: 400;
     font-size: 1.4rem;
     margin-bottom: 5px;
@@ -60,6 +69,6 @@
 }
 
 .learn__more a:hover {
-    color: white;
+    color: var(--text-color);
 }
 

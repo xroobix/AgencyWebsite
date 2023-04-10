@@ -45,7 +45,7 @@
 }
 
 .choose__us-title {
-    color: white;
+    color: var(--text-color);
     font-weight: 500;
     margin-bottom: 10px;
 }

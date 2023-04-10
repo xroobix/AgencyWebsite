@@ -10,8 +10,12 @@
 .team__item {
     width: 20%;
     background: var(--card-bg);
-    border: 1px solid var;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.light-theme .team__item {
+    background: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .team__img {
@@ -20,6 +24,10 @@
     border-radius: 5px 5px 0px 0px;
     background: white;
     overflow: hidden;
+}
+
+.light-theme .team__img{
+    background: #f5f5f5;
 }
 
 .team__img img {
@@ -46,7 +54,7 @@
 }
 
 .team__member-social span  i{
-    color: white;
+    color: var(--primary-color);
     cursor: pointer;
 }
 
