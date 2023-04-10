@@ -37,7 +37,7 @@ export const Testimonial = () => {
   };
 
   return (
-    <section>
+    <section className='testimonial'>
       <div className="container">
         <div className="slider__content-top">
           <h6 className="subtitle">Testimonials</h6>
