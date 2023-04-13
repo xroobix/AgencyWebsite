@@ -34,3 +34,24 @@
 .counter__title {
     font-size: 1.25rem;
 }
+
+@media only screen and (max-width:992px) {
+    .counter__number {
+        font-size: 2rem;
+    }
+
+    .counter__title {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .counter__wrapper {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .counter__item {
+        width: 100%;
+        text-align: center;
+    }
+}

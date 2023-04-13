@@ -40,3 +40,28 @@
     color: var(--primary-color);
     margin-block: 10px;
 }
+
+@media only screen and (max-width:992px) {
+    .services__top-content h2 {
+        font-size: 1.5rem;
+    }
+    .services__item-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 2rem;
+    }
+
+    .services__item {
+        width: 47%;
+    }
+    
+}
+
+@media only screen and (max-width:600px) {
+    .services__item-wrapper {
+        flex-direction: column;
+    }
+    .services__item {
+        width: 100%;
+    }
+}

@@ -61,7 +61,7 @@ h1, h2 {
 }
 
 section {
-  padding: 70px 0px;
+  padding-block: 70px;
 }
 
 .container {
@@ -81,4 +81,16 @@ section {
   color: var(--primary-color);
   font-weight: 400;
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width:992px) {
+  section {
+    padding-block: 40px;
+  }
+  .description {
+    font-size: .8rem;
+  }
+  h1, h2 {
+    font-size: 1.5rem;
+  }
 }

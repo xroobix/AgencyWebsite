@@ -72,3 +72,28 @@
     color: var(--text-color);
 }
 
+@media only screen and (max-width:992px) {
+    .post__description {
+        font-size: .8rem;
+    }
+    .blog__img {
+        margin: 0;
+        height: 150px;
+    }
+    .learn__more a{
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .blog__wrapper {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .blog__item, .blog__item:nth-child(2) {
+        width: 75%;
+    }
+    .post__description {
+        margin-top: 10px;
+    }
+}

@@ -29,3 +29,22 @@
     outline: none;
     width: 70%;
 }
+
+@media only screen and (max-width:992px) {
+    .newsletter__content h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .newsletter__content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .newsletter__form {
+        min-width: 350px;
+        width: 70%;
+        max-width: 420px;
+    }
+}
