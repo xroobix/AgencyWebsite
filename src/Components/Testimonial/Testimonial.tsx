@@ -29,7 +29,6 @@ const customerData = [
 export const Testimonial = () => {
   const settings = {
     infinite: true,
-    centerMode: true,
     speed: 1000,
     autoplay: true,
     autoplaySpeed: 5000,
