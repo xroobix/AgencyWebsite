@@ -94,13 +94,14 @@
 }
 
 @media only screen and (max-width:600px) {
+    .hero__wrapper {
+        flex-direction: column-reverse;
+    }
     .hero__content h2 {
         text-align: center;
+        font-size: 2rem;
     }
-    .hero__img {
-        display: none;
-    }
-    .hero__content {
+    .hero__content, .hero__img {
         width: 100%;
     }
     .hero__btns {
