@@ -1,5 +1,7 @@
+import { useRef } from 'react';
 import { Card } from './Card';
 import './services.css';
+import { useInView } from 'framer-motion';
 
 const servicesData = [
     {
@@ -25,8 +27,10 @@ const servicesData = [
 ]
 
 export const Services = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <section id="services">
+    <section id="services" ref={ref}>
       <div className="container">
         <div className="services__top-content">
           <h6 className="subtitle">Our Services</h6>
@@ -35,7 +39,7 @@ export const Services = () => {
         </div>
         <div className="services__item-wrapper">
             {servicesData.map((i, idx) => (
-                <Card key={`services__item-${idx}`} title={i.title} description={i.description} icon={i.icon}/>
+                <Card key={`services__item-${idx}`} title={i.title} description={i.description} icon={i.icon} isInView={isInView} idx={idx} />
             ))}
         </div>
       </div>

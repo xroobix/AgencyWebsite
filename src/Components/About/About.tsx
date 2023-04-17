@@ -1,6 +1,8 @@
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
+import aboutImg from '../../images/about-us.jpg';
 import { ChoseUs } from './ChoseUs';
 import './about.css';
-import aboutImg from "../../images/about-us.jpg"
 
 const chooseData = [
   {
@@ -24,9 +26,19 @@ const chooseData = [
 ];
 
 export const About = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <section id="about">
-      <div className="container">
+    <section id="about" ref={ref}>
+      <div
+        className="container"
+        style={{
+          transform: isInView ? 'none' : 'translateY(100%)',
+          opacity: isInView ? 1 : 0,
+          transition: 'all 0.5s ease-out 0.2s',
+        }}
+      >
         <div className="about__wrapper">
           <div className="about__content">
             <h6 className="subtitle">Why choose us</h6>

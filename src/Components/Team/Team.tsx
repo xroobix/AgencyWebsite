@@ -1,9 +1,11 @@
+import { useRef } from 'react';
 import member1 from '../../images/team-01.png';
 import member2 from '../../images/team-02.png';
 import member3 from '../../images/team-03.png';
 import member4 from '../../images/team-04.png';
 import { Member } from './Member';
 import './team.css';
+import { useInView } from 'framer-motion';
 
 const teamData = [
   {
@@ -29,8 +31,10 @@ const teamData = [
 ];
 
 export const Team = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <section className="our__team">
+    <section className="our__team" ref={ref}>
       <div className="container">
         <div className="team__content">
           <h6 className="subtitle">Our Team</h6>
@@ -45,6 +49,8 @@ export const Team = () => {
               name={i.name}
               position={i.position}
               key={`team__member-${idx}`}
+              idx={idx}
+              isInView={isInView}
             />
           ))}
         </div>

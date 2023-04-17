@@ -1,3 +1,5 @@
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
 import Slider from 'react-slick';
 import customer1 from '../../images/ava-1.jpg';
 import customer2 from '../../images/ava-2.jpg';
@@ -35,9 +37,19 @@ export const Testimonial = () => {
     slidesToShow: 1,
   };
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <section className='testimonial'>
-      <div className="container">
+    <section className="testimonial" ref={ref}>
+      <div
+        className="container"
+        style={{
+          transform: isInView ? 'none' : 'translateY(100%)',
+          opacity: isInView ? 1 : 0,
+          transition: 'all 0.5s ease-out 0.2s',
+        }}
+      >
         <div className="slider__content-top">
           <h6 className="subtitle">Testimonials</h6>
           <h2>

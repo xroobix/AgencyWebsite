@@ -1,3 +1,5 @@
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
 import articleThumbnail from '../../images/article.png';
 import caseStudyThumbnail from '../../images/case-study.png';
 import videoThumbnail from '../../images/video.png';
@@ -10,28 +12,38 @@ const blogData = [
     category: 'Marketing',
     description: 'In this video you gonna learn how ...',
     thumbnail: videoThumbnail,
-    link: "#",
+    link: '#',
   },
   {
     title: 'Case Study',
     category: 'SEO',
-    description: "You've just written an article. And you think it's pretty good. But is it fit to compete with the millions of other articles in Google's index on the same topic? In this post ...",
+    description:
+      "You've just written an article. And you think it's pretty good. But is it fit to compete with the millions of other articles in Google's index on the same topic? In this post ...",
     thumbnail: caseStudyThumbnail,
-    link: "#",
+    link: '#',
   },
   {
     title: 'Article',
     category: 'Design',
     description: 'This article will give you a basic ...',
     thumbnail: articleThumbnail,
-    link: "#",
+    link: '#',
   },
 ];
 
 export const Blog = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <section id='blog' className='blog'>
-      <div className="container">
+    <section id="blog" className="blog" ref={ref}>
+      <div
+        className="container"
+        style={{
+          transform: isInView ? 'none' : 'translateY(100%)',
+          opacity: isInView ? 1 : 0,
+          transition: 'all 0.5s ease-out 0.2s',
+        }}
+      >
         <div className="blog__top-content">
           <h6 className="subtitle">Our Blog</h6>
           <h2>
