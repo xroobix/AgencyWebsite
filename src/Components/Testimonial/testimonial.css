@@ -58,6 +58,10 @@
     font-size: .8rem;
 }
 
+.slick-prev:before, .slick-next:before {
+    color: var(--text-color);
+}
+
 @media only screen and (max-width:992px) {
     .slider__item .description {
         min-height: 240px;
