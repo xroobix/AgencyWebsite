@@ -103,7 +103,7 @@ export const Footer = () => {
                 </div>
                 <p className="copyright">
                     Copyright© {year}, developed by{' '}
-                    <a href="hhttps://github.com/xroobix">RooB</a>.
+                    <a href="https://github.com/xroobix">RooB</a>.
                     All rights reserved.
                 </p>
             </div>
