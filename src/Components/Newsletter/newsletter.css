@@ -1,6 +1,7 @@
 .newsletter {
     background: var(--card-bg);
     margin-top: 60px;
+    overflow: hidden;
 }
 
 .light-theme .newsletter {

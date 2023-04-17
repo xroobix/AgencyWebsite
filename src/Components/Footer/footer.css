@@ -1,5 +1,6 @@
 .footer {
     padding-block: 60px;
+    overflow: hidden;
 }
 
 .footer__wrapper {
